@@ -1,0 +1,40 @@
+.project{
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+    margin: 70px auto;
+}
+.contiii{
+    margin-bottom: 5px;
+}
+p.card-text{
+    margin-bottom: 2px;
+}
+button{
+    margin-top: 10px;
+}
+
+.card-body{
+    margin: 20px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-body img{
+    width: 15px;
+    margin: 10px;
+    display: inline;
+}
+.card-title{
+    font-family: poppins;
+    text-align: center;
+    font-weight: bold;
+    color: #524751;
+}
+.card-img-top:hover{
+scale: 1.5;
+}
+i.fa-bars{
+    color: red;
+}
