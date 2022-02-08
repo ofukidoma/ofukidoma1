@@ -1,8 +1,26 @@
 "use strict";
 
 const Team = () => {
-  return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
-    className: "col-12 col-md-6"
+  const [teamMembers2, setTeamMembers2] = React.useState([]); // Import the functions you need from the SDKs you need
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  React.useEffect(() => {
+    var teamMembers = [];
+    db.collection("TEAM").get().then(querySnapshot => {
+      querySnapshot.forEach(doc => {
+        var member = doc.data();
+        member.id = doc.id;
+        teamMembers.push(member);
+      });
+      setTeamMembers2(teamMembers);
+    });
+  }, [teamMembers2]);
+  return teamMembers2.map(member => /*#__PURE__*/React.createElement("div", {
+    className: "col-12 col-md-6",
+    key: member.id
   }, /*#__PURE__*/React.createElement("div", {
     className: "card border-0 shadow-lg pt-5 my-5 position-relative"
   }, /*#__PURE__*/React.createElement("div", {
@@ -11,15 +29,15 @@ const Team = () => {
     className: "member-profile position-absolute w-100 text-center"
   }, /*#__PURE__*/React.createElement("img", {
     className: "rounded-circle mx-auto d-inline-block shadow-sm",
-    src: "https://firebasestorage.googleapis.com/v0/b/ofukidoma1-8a9d7.appspot.com/o/TEAM%2Foche.jpg?alt=media&token=095d1099-d8f0-462e-acf0-b8586c83cc47",
+    src: member.img,
     alt: ""
   })), /*#__PURE__*/React.createElement("div", {
     className: "card-text pt-1"
   }, /*#__PURE__*/React.createElement("h5", {
     className: "member-name mb-0 text-center text-primary font-weight-bold"
-  }, "Emmanuel Abechi"), /*#__PURE__*/React.createElement("p", {
+  }, member.name), /*#__PURE__*/React.createElement("p", {
     className: "font-italic"
-  }, "Chairman, Ofu K\u2019Idoma for unity and development Association."), /*#__PURE__*/React.createElement("div", null, "Anthony Aboki Okwa is a Fellow of the Nigerian Institute of Building (NIOB), and DG of C-STEMP Construction Skills Training and Empowerment Project Ltd/Gte."))), /*#__PURE__*/React.createElement("div", {
+  }, member.position), /*#__PURE__*/React.createElement("div", null, member.portfolio))), /*#__PURE__*/React.createElement("div", {
     className: "card-footer theme-bg-primary border-0 text-center"
   }, /*#__PURE__*/React.createElement("ul", {
     className: "social-list list-inline mb-0 mx-auto"
