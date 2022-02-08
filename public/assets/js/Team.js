@@ -16,7 +16,9 @@ const Team = () => {
       .get()
       .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-          teamMembers.push(doc.data());
+          var member = doc.data()
+          member.id=doc.id
+          teamMembers.push(member);
         });
         setTeamMembers2(teamMembers)
       });
@@ -28,7 +30,7 @@ const Team = () => {
 
 
   return teamMembers2.map((member) => (
-    <div className="card border-0 shadow-lg pt-5 my-5 position-relative" key={member.id}>
+    <div className="" key={member.id}>
       <div className="col-12 col-md-6">
         <div className="card border-0 shadow-lg pt-5 my-5 position-relative">
           <div className="card-body p-4 conts">
