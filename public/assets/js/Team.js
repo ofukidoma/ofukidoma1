@@ -30,7 +30,7 @@ const Team = () => {
 
 
   return teamMembers2.map((member) => (
-    <div className="" key={member.id}>
+    <div className="row justify-content-center" key={member.id}>
       <div className="col-12 col-md-6">
         <div className="card border-0 shadow-lg pt-5 my-5 position-relative">
           <div className="card-body p-4 conts">
