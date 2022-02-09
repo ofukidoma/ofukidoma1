@@ -21,8 +21,9 @@ const Team = () => {
           teamMembers.push(member);
         });
         setTeamMembers2(teamMembers)
+        console.log(teamMembers);
       });
-  }, [teamMembers2])
+  }, [])
  
 
 
