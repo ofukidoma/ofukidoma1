@@ -24,6 +24,7 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
 
 
+    <link rel="stylesheet" href="./assets/css/nicepagefdde.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7cOpen+Sans:300,400,400i,600,700"
         rel="stylesheet">
@@ -688,6 +689,7 @@
 
 
 
+
     <script>
         firebase.initializeApp({
             apiKey: "AIzaSyCiPqw1vxihuDebpy4nWXH4HRJwFwj1qd0",
@@ -710,7 +712,11 @@
 
 
     <script type="text/babel" src="./assets/js/Team.js"></script>
-
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
 </body>
 
 </html>
