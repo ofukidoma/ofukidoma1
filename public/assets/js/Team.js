@@ -20,8 +20,10 @@ const Team = () => {
           member.id = doc.id;
           teamMembers.push(member);
         });
-        setTeamMembers2(teamMembers);
-        console.log(teamMembers);
+        var sortedTeamMembers = teamMembers.sort(function(a,b){
+          return a.id-b.id;
+        })
+        setTeamMembers2(sortedTeamMembers);
       });
   }, []);
 
