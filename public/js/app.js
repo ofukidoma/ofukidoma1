@@ -2,7 +2,7 @@ const projectList = document.querySelector('#card-deck');
 const projects= [
     {
         name :"Donation of K-yan Device",
-        id :"1",
+        id :"4",
         date :"12/343",
         venue :"Ochetoha Ki Doma",
         about :"This project is aimed at enhancing the teaching delivery for schools for the handicaped and the ophanage home",
@@ -70,7 +70,7 @@ const projects= [
     },
     {
         name :"Provision of enhanced Farm products",
-        id :"1",
+        id :"2",
         date :"12/343",
         venue :"Ochetoha Ki Doma",
         about :"This poject is aimed at enhancing farming and agriculture in the community",
@@ -100,6 +100,40 @@ const projects= [
             "./images/22.jpg",
             "./images/23.jpg",
             "./images/24.jpg",
+        ]
+    },
+    {
+        name :"Presentation of Security/Vigilante Uniforms ",
+        id :"3",
+        date :"19/02",
+        venue :"Ochetoha Kidoma secretariate, GRA, Otukpo",
+        about :"Presentation of Security/Vigilante Uniforms to LGA Chairmen in Zone C, Benue State",
+        image :"./assets/img/team/ds9.jpg",
+        images :[
+            "./assets/img/team/ds1.jpg",
+            "./assets/img/team/ds2.jpg",
+            "./assets/img/team/ds3.jpg",
+            "./assets/img/team/ds4.jpg",
+            "./assets/img/team/ds5.jpg",
+            "./assets/img/team/ds6.jpg",
+            "./assets/img/team/ds7.jpg",
+            "./assets/img/team/ds8.jpg",
+            "./assets/img/team/ds9.jpg",
+            "./assets/img/team/ds10.jpg",
+            "./assets/img/team/ds11.jpg",
+            "./assets/img/team/ds12.jpg",
+            "./assets/img/team/ds1.jpg",
+            "./assets/img/team/ds2.jpg",
+            "./assets/img/team/ds3.jpg",
+            "./assets/img/team/ds4.jpg",
+            "./assets/img/team/ds5.jpg",
+            "./assets/img/team/ds6.jpg",
+            "./assets/img/team/ds7.jpg",
+            "./assets/img/team/ds8.jpg",
+            "./assets/img/team/ds9.jpg",
+            "./assets/img/team/ds10.jpg",
+            "./assets/img/team/ds11.jpg",
+            "./assets/img/team/ds12.jpg"
         ]
     }
 ]
@@ -207,7 +241,7 @@ function renderProjects(project){
 
 
 
-projects.forEach(project=>{
+projects.reverse().forEach(project=>{
     renderProjects(project)
 })
 
