@@ -15,7 +15,7 @@ const Profile = () => {
                     <div className="u-container-layout u-valign-top u-container-layout-1">
                       <div
                         alt=""
-                        style={{backgroundImage: `url('${member.img}')`}}
+                        style={{ backgroundImage: `url('${member.img}')` }}
                         className="u-image u-image-circle u-image-1"
                         data-image-width="1071"
                         data-image-height="1500"
@@ -35,7 +35,9 @@ const Profile = () => {
                 <div className="u-layout-col">
                   <div className="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
                     <div className="u-container-layout u-valign-middle u-container-layout-2">
-                      <h5 className="u-text u-text-default u-text-3">Portfolio</h5>
+                      <h5 className="u-text u-text-default u-text-3">
+                        Portfolio
+                      </h5>
                       <p className="u-custom-font u-heading-font u-text u-text-default u-text-4">
                         {member.portfolio}
                       </p>
@@ -57,15 +59,17 @@ const Profile = () => {
       </section>
       <section class="u-backlink u-clearfix u-grey-80">
         <a class="u-link" href="#" target="_blank">
-            <span>{member.phone}</span>
+          <span>{member.phone}</span>
         </a>
-        <p class="u-text">
-            <span>{member.email}</span>
-        </p>
+        <p></p>
+        <div>
+          <p class="u-text">{member.email}</p>
+        </div>
         <a class="u-link" href="#" target="_blank">
-            <span>{member.address}</span>
-        </a>.
-    </section>
+          <span>{member.address}</span>
+        </a>100
+        .
+      </section>
     </div>
   );
 };
