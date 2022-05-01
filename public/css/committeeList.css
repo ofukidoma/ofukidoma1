@@ -1,0 +1,33 @@
+img{
+    width: 100%;
+}
+
+
+
+.banner{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-bottom: 5px solid rgb(158, 0, 0);
+    border-top: 5px solid rgb(136, 0, 0);
+}
+
+.member {
+    display: flex;
+}
+.member span {
+    border-right: 1px solid grey;
+    display: block;
+}
+.member span:nth-child(1) {
+   flex: 4;
+}
+.member span:nth-child(2) {
+   flex: 1;
+}
+.member span:nth-child(3) {
+   flex: 3;
+}
+.member span:nth-child(4) {
+   flex: 5;
+}

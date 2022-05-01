@@ -1,0 +1,35 @@
+
+.comitee img{
+    width: 100%;
+}
+.comitee {
+    width:300px;
+    margin: 10px;
+    border: 6px solid rgb(255, 255, 255);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.336);
+}
+
+.number{
+    display: inline;
+    background: rgb(173, 47, 47);
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    padding: 10px;
+}
+
+.down{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgb(138, 138, 138);
+    justify-content: space-around;
+}
