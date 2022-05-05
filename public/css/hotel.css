@@ -1,0 +1,31 @@
+.hotel{
+    width: 300px;
+    box-shadow: 0 0 4px rgba(149, 154, 162, 0.5);
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+.name{
+    font-size:3vmin;
+    color: rgb(72, 53, 53);
+    margin-bottom: 0;
+}
+
+.details span{
+    color: rgb(26, 26, 23);
+}
+
+.star i{
+    color: rgb(207, 69, 0);
+}
+.price span{
+    color: black;
+}
+
+.hotels{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    background: rgb(232, 232, 232);
+}
